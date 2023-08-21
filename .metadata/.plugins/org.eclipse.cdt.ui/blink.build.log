@@ -1,0 +1,11 @@
+Total sizes:
+Used stat D/IRAM:   54382 bytes ( 266914 remain, 16.9% used)
+      .data size:    3576 bytes
+      .bss  size:    3760 bytes
+      .text size:   47046 bytes
+Used Flash size :  131182 bytes
+      .text     :   94486 bytes
+      .rodata   :   36440 bytes
+Total image size:  181804 bytes (.bin may be padded larger)
+/root/.espressif/python_env/idf5.0_py3.10_env/bin/python /home/rome/esp/esp-idf/components/partition_table/gen_esp32part.py /home/rome/eclipse-workspace/blink/build/partition_table/partition-table.bin
+Total time taken to build the project: 10.192 ms

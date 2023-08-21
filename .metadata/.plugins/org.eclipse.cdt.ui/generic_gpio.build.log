@@ -1,0 +1,4 @@
+cmake --build . --target all
+gmake: Makefile: No existe el archivo o el directorio
+gmake: *** No hay ninguna regla para construir el objetivo 'Makefile'.  Alto.
+Build complete (1 errors, 0 warnings): /home/rome/eclipse-workspace/esp/esp-idf-v5.1/examples/peripherals/gpio/generic_gpio/build/default

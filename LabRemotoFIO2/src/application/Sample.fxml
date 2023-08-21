@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <VBox alignment="CENTER" layoutX="338.0" layoutY="135.0" prefHeight="540.0" prefWidth="960.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="19.0" prefWidth="960.0" spacing="10.0" style="-fx-background-color: #f3f3f4;">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="21.0" prefWidth="26.0" style="-fx-background-color: #a3e1d4;">
+                     <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="13.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../resourses/return.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label prefHeight="16.0" prefWidth="182.0" text="Volver al sitio principal..." />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f3f3f4e3" height="31.0" stroke="#f3f3f4" strokeType="INSIDE" width="62.0" />
+                  <Label prefHeight="24.0" prefWidth="524.0" text="FENÓMENO DE DIFRACCIÓN">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f3f3f4e3" height="31.0" stroke="#f3f3f4" strokeType="INSIDE" width="3.0" />
+                  <Label style="-fx-background-color: #a3e1d4;" text="Log out" />
+                  <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../resourses/log_in.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox fx:id="mensajeHBox" alignment="BOTTOM_LEFT" prefHeight="0.0" prefWidth="960.0">
+               <children>
+                  <HBox prefHeight="34.0" prefWidth="79.0" />
+                  <Label fx:id="mensajeUsuario" opacity="0.0" prefHeight="20.0" prefWidth="685.0" textFill="#f80505">
+                     <font>
+                        <Font size="1.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="centralHBox" prefHeight="474.0" prefWidth="960.0" spacing="5.0">
+               <children>
+                  <VBox prefHeight="408.0" prefWidth="670.0">
+                     <children>
+                        <LineChart fx:id="lineChart" alternativeRowFillVisible="false" focusTraversable="true" horizontalZeroLineVisible="false" prefHeight="455.0" prefWidth="670.0" verticalZeroLineVisible="false">
+                          <xAxis>
+                            <NumberAxis autoRanging="false" label="Posición del sensor [mm]" prefHeight="51.0" prefWidth="659.0" upperBound="250.0" fx:id="x">
+                                 <opaqueInsets>
+                                    <Insets top="10.0" />
+                                 </opaqueInsets>
+                              </NumberAxis>
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis fx:id="y" autoRanging="false" label="Intensidad [%]" prefHeight="358.0" prefWidth="63.0" side="LEFT" upperBound="410.0">
+                                 <opaqueInsets>
+                                    <Insets left="5.0" />
+                                 </opaqueInsets>
+                              </NumberAxis>
+                          </yAxis>
+                        </LineChart>
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_RIGHT" prefHeight="408.0" prefWidth="264.0" spacing="3.0">
+                     <children>
+                        <VBox prefHeight="11.0" prefWidth="277.0" />
+                        <ImageView fitHeight="210.0" fitWidth="277.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../resourses/videoEquipo.jpg" />
+                           </image>
+                        </ImageView>
+                        <VBox prefHeight="36.0" prefWidth="277.0" />
+                        <HBox fx:id="esquemaHBox" alignment="BOTTOM_CENTER" prefHeight="155.0" prefWidth="280.0">
+                           <children>
+                              <Slider fx:id="spinerBar" blockIncrement="1.0" max="250.0" prefHeight="38.0" prefWidth="253.0" showTickLabels="true" showTickMarks="true">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </Slider>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin></HBox>
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </HBox>
+            <HBox fx:id="inferiorHBox" alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="68.0" prefWidth="960.0" spacing="15.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Hyperlink prefHeight="24.0" prefWidth="343.0" text="Guía de usuario.pdf" />
+                  <TextField fx:id="pathDatos" opacity="0.0" prefHeight="26.0" prefWidth="6.0" promptText="/home/rome/cpp-latest-released/workspace/LabRemotoFIO2/datos.csv" text="/home/rome/cpp-latest-released/workspace/LabRemotoFIO2/datos.csv" />
+                  <HBox prefHeight="57.0" prefWidth="0.0" />
+                  <Button fx:id="sabeData" mnemonicParsing="false" prefHeight="28.0" prefWidth="159.0" text="Guardar Registro">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <MenuButton fx:id="setRanuraAlambre" contentDisplay="RIGHT" mnemonicParsing="false" prefHeight="28.0" prefWidth="114.0" text="Objeto">
+                    <items>          
+                      <MenuItem mnemonicParsing="false" text="Ranura A" />
+                      <MenuItem mnemonicParsing="false" text="Ranura B" />
+                      <MenuItem mnemonicParsing="false" text="Alambre A" />
+                      <MenuItem mnemonicParsing="false" text="Alambre B" />
+                    </items>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </MenuButton>
+                  <MenuButton fx:id="setLaserColor" contentDisplay="RIGHT" mnemonicParsing="false" prefHeight="28.0" prefWidth="106.0" text="Laser">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Laser ROJO" />
+                        <MenuItem mnemonicParsing="false" text="Laser VERDE" />
+                     </items>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </MenuButton>
+                  <Button fx:id="btn_start" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#experimetStart" prefHeight="19.0" prefWidth="101.0" style="-fx-background-color: #62f807;" text="Iniciar" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <rotationAxis>
+                        <Point3D />
+                     </rotationAxis>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+   <rotationAxis>
+      <Point3D />
+   </rotationAxis>
+</AnchorPane>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane prefHeight="453.0" prefWidth="499.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/20.0.1" fx:controller="application.SampleController">
+   <center>
+      <TextField fx:id="tf_nombre_usuario" BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+      <Button fx:id="btn_insert" mnemonicParsing="false" onAction="#action_btn_insert" text="Button" BorderPane.alignment="CENTER" />
+   </top>
+   <right>
+      <TextField fx:id="tf_clave_usuario" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>

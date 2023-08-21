@@ -1,0 +1,12 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+#esquemaHBox{
+	 -fx-background-image: url("/application/esquemaV3.png");
+	 -fx-background-size:  100%100%;
+}
+
+#centralHBox,#mensajeHBox,#mensajeUsuario{
+	 -fx-background-color: #f0fff0;
+}
+#inferiorHBox {
+	 -fx-background-color:#e0ffff;
+}

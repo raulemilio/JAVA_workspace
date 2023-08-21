@@ -1,0 +1,12 @@
+eclipse.preferences.version=1
+org.eclipse.jdt.core.builder.resourceCopyExclusionFilter=
+org.eclipse.jdt.core.codeComplete.visibilityCheck=enabled
+org.eclipse.jdt.core.compiler.codegen.inlineJsrBytecode=enabled
+org.eclipse.jdt.core.compiler.codegen.targetPlatform=17
+org.eclipse.jdt.core.compiler.compliance=17
+org.eclipse.jdt.core.compiler.problem.assertIdentifier=error
+org.eclipse.jdt.core.compiler.problem.enumIdentifier=error
+org.eclipse.jdt.core.compiler.release=enabled
+org.eclipse.jdt.core.compiler.source=17
+org.eclipse.jdt.core.userLibrary.javaFX=<?xml version\="1.0" encoding\="UTF-8"?>\n<userlibrary systemlibrary\="false" version\="2">\n\t<archive path\="/home/rome/eclipse-workspace/librerias/javafx-sdk-20.0.1/lib/javafx.base.jar"/>\n\t<archive path\="/home/rome/eclipse-workspace/librerias/javafx-sdk-20.0.1/lib/javafx.controls.jar"/>\n\t<archive path\="/home/rome/eclipse-workspace/librerias/javafx-sdk-20.0.1/lib/javafx.fxml.jar"/>\n\t<archive path\="/home/rome/eclipse-workspace/librerias/javafx-sdk-20.0.1/lib/javafx.graphics.jar"/>\n\t<archive path\="/home/rome/eclipse-workspace/librerias/javafx-sdk-20.0.1/lib/javafx.media.jar"/>\n\t<archive path\="/home/rome/eclipse-workspace/librerias/javafx-sdk-20.0.1/lib/javafx.swing.jar"/>\n\t<archive path\="/home/rome/eclipse-workspace/librerias/javafx-sdk-20.0.1/lib/javafx.web.jar"/>\n\t<archive path\="/home/rome/eclipse-workspace/librerias/javafx-sdk-20.0.1/lib/javafx-swt.jar"/>\n</userlibrary>\n
+org.eclipse.jdt.core.userLibrary.sqlConector=<?xml version\="1.0" encoding\="UTF-8"?>\n<userlibrary systemlibrary\="false" version\="2">\n\t<archive path\="/home/rome/eclipse-workspace/librerias/mysql-connector-java-5.1.47/mysql-connector-java-5.1.47.jar"/>\n\t<archive path\="/home/rome/eclipse-workspace/librerias/mysql-connector-java-5.1.47/mysql-connector-java-5.1.47-bin.jar"/>\n</userlibrary>\n
